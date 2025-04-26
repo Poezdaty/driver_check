@@ -136,7 +136,7 @@ def main():
                             if success:
                                 print(f"{surname} - {message}")
                                 # Відправляємо повідомлення в Telegram
-                                telegram_message = f"✅ Посвідчення дійсне!\nПрізвище: {surname}\nСерія: {seria}\nНомер: {number}"
+                                telegram_message = f"✅ Посвідчення дійсне!\nПрізвище: {surname}\nСерія: {seria}\nНомер: {number}\nДата народження: {birthday}"
                                 send_telegram_message(telegram_message)
                                 # Зберігаємо оброблені дані
                                 save_processed_data(seria, number)
